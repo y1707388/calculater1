@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="theme-switcher">
+            <button id="theme-toggle">Toggle Theme</button>
+        </div>
+        <div class="display">
+            <input type="text" id="result" disabled placeholder="0" title="Calculator Display">
+        </div>
+        <div class="history">
+            <div class="history-header">
+                <p>History</p>
+                <button id="clear-history">Clear</button>
+            </div>
+            <ul id="history-list"></ul>
+        </div>
+        <div class="buttons">
+            <button data-action="clear" class="operator">C</button>
+            <button data-action="delete" class="operator">DEL</button>
+            <button data-value="%" class="operator">%</button>
+            <button data-value="/" class="operator">÷</button>
+            <button data-value="7">7</button>
+            <button data-value="8">8</button>
+            <button data-value="9">9</button>
+            <button data-value="*" class="operator">×</button>
+            <button data-value="4">4</button>
+            <button data-value="5">5</button>
+            <button data-value="6">6</button>
+            <button data-value="-" class="operator">−</button>
+            <button data-value="1">1</button>
+            <button data-value="2">2</button>
+            <button data-value="3">3</button>
+            <button data-value="+" class="operator">+</button>
+            <button data-value="0">0</button>
+            <button data-value=".">.</button>
+            <button data-action="calculate" class="operator">=</button>
+            <button data-value="sin(" class="operator">sin</button>
+            <button data-value="cos(" class="operator">cos</button>
+            <button data-value="tan(" class="operator">tan</button>
+            <button data-value="log(" class="operator">log</button>
+            <button data-value="ln(" class="operator">ln</button>
+            <button data-value="^" class="operator">^</button>
+            <button data-value="sqrt(" class="operator">sqrt</button>
+            <button data-value="Math.PI" class="operator">π</button>
+            <button data-value="Math.E" class="operator">e</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
